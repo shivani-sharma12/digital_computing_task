@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      #textunderline {
+        text-shadow: 5px 5px 5px red, -5px -5px 5px blue;
+        text-decoration-line: underline;
+        text-underline-offset: 19px;
+        text-decoration-thickness: 10px;
+        text-decoration-style: wavy;
+      }
+      #textunderline:hover{text-shadow: 5px 5px 5px rgb(11, 194, 84), -5px -5px 5px rgb(204, 9, 194);
+        
+      }
+    </style>
+  </head>
+  <body class="relative bg-gray-200 flex w-[100%] bg-yellow-800">
+    <div id="textunderline" class="w-[20%] h-[10vh] text-7xl pt-[25%] pl-[4%] font-bold">
+      <p class=" shadow-xl w-[165%] h-[13vh] shadow-black">calculator</p>
+    </div>
+    <div class="h-[88vh] w-[38%] rounded-[20px] bg-white ml-[15%] mt-[2%] shadow-xl shadow-black ">
+      
+      <div class="w-80%">
+        
+          <div
+          class="h-[20vh] w-[35%] bg-black border-2 border-black shadow-2xl shadow-white absolute top-[53px] left-[36.4%] rounded-[20px] border-white border-2"
+        ></div>
+        <div
+          class="h-[60vh] w-[35%] bg-black border-black shadow-xl shadow-white grid grid-cols-4 gap-[10px] border-2 border-black pt-[20px] pl-[60px] px-[30px] left-[36.4%] absolute top-[27vh] text-white text-xl font-bold rounded-[20px] border-white border-2"
+        >
+          <div
+            class="h-[55px] w-[55px] border-2 border-white rounded-full shadow-2xl shadow-black text-center pt-[13px] bg-orange-500 hover:bg-red-700"
+          >
+            AC
+          </div>
+          <div
+            class="h-[55px] w-[55px] border-2 border-white rounded-full shadow-2xl shadow-black text-center pt-[13px] bg-orange-500 hover:bg-red-700"
+          >
+            X
+          </div>
+          <div
+            class="h-[55px] w-[55px] border-2 border-white rounded-full shadow-2xl shadow-black text-center pt-[13px] bg-orange-500 hover:bg-red-700"
+          >
+            %
+          </div>
+          <div
+            class="h-[55px] w-[55px] border-2 border-white rounded-full shadow-2xl shadow-black text-center p-[12px] bg-orange-500 hover:bg-red-700"
+          >
+            /
+          </div>
+          <div
+            class="h-[55px] w-[55px] border-2 border-white rounded-full shadow-2xl shadow-black p-[12px] text-center py-[9px] bg-white text-black hover:bg-yellow-800 hover:text-white"
+          >
+            1
+          </div>
+          <div
+            class="h-[55px] w-[55px] border-2 border-white rounded-full shadow-2xl shadow-black p-[12px] text-center py-[9px] bg-white text-black hover:bg-yellow-800 hover:text-white"
+          >
+            2
+          </div>
+          <div
+            class="h-[55px] w-[55px] border-2 border-white rounded-full shadow-2xl shadow-black p-[12px] text-center py-[9px] bg-white text-black hover:bg-yellow-800 hover:text-white"
+          >
+            3
+          </div>
+          <div
+            class="h-[55px] w-[55px] border-2 border-white rounded-full shadow-2xl shadow-black text-center pt-[16px] bg-orange-500 hover:bg-red-700"
+          >
+            *
+          </div>
+          <div
+            class="h-[55px] w-[55px] border-2 border-white rounded-full shadow-2xl shadow-black p-[12px] text-center py-[9px] bg-white text-black hover:bg-yellow-800 hover:text-white"
+          >
+            4
+          </div>
+          <div
+            class="h-[55px] w-[55px] border-2 border-white rounded-full shadow-2xl shadow-black p-[12px] text-center py-[9px] bg-white text-black hover:bg-yellow-800 hover:text-white"
+          >
+            5
+          </div>
+          <div
+            class="h-[55px] w-[55px] border-2 border-white rounded-full shadow-2xl shadow-black p-[12px] text-center py-[9px] bg-white text-black hover:bg-yellow-800 hover:text-white"
+          >
+            6
+          </div>
+          <div
+            class="h-[55px] w-[55px] border-2 border-white rounded-full shadow-2xl shadow-black text-center pt-[13px] bg-orange-500 hover:bg-red-700"
+          >
+            -
+          </div>
+          <div
+            class="h-[55px] w-[55px] border-2 border-white rounded-full shadow-2xl shadow-black text-center py-[9px] bg-white text-black hover:bg-yellow-800 hover:text-white"
+          >
+            7
+          </div>
+          <div
+            class="h-[55px] w-[55px] border-2 border-white rounded-full shadow-2xl shadow-black p-[12px] text-center py-[9px] bg-white text-black hover:bg-yellow-800 hover:text-white"
+          >
+            8
+          </div>
+          <div
+            class="h-[55px] w-[55px] border-2 border-white rounded-full shadow-2xl shadow-black text-center py-[9px] bg-white text-black hover:bg-yellow-800 hover:text-white"
+          >
+            9
+          </div>
+          <div
+            class="h-[55px] w-[55px] border-2 border-white rounded-full shadow-2xl shadow-black text-center pt-[11px] bg-orange-500 hover:bg-red-700"
+          >
+            +
+          </div>
+          <div
+            class="h-[55px] w-[55px] border-2 border-white rounded-full shadow-2xl shadow-black p-[12px] text-center py-[9px] bg-white text-black hover:bg-yellow-800 hover:text-white"
+          >
+            0
+          </div>
+          <div
+            class="h-[55px] border-2 border-white rounded-full shadow-2xl shadow-black text-center pt-[13px] ml-[-20px] mx-[10px] bg-red-600 hover:bg-green-700 col-span-2"
+          >
+            =
+          </div>
+          <div
+            class="h-[55px] w-[55px] border-2 border-white rounded-full shadow-2xl shadow-black text-center py-[9px] text-white bg-orange-500 hover:bg-red-700"
+          >
+            .
+          </div>
+        </div>
+        </div>
+      </div>
+
+    </div>
+    
+  </body>
+</html>
