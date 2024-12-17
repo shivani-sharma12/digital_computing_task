@@ -7,90 +7,81 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!DOCTYPE html>
     <html lang="en">
-
       <head>
-        
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Shivani Sharma Portfolio</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <style>
-         @keyframes typewriter {
-      0% {
-        width: 0;
-      }
-      100% {
-        width: 100%;
-      }
-    }
-    
-    @keyframes blink {
-      0%,
-      100% {
-        border-color: transparent;
-      }
-      50% {
-        border-color: white;
-      }
-    }
-    
-    .typewriter {
-      overflow: hidden; 
-      white-space: nowrap;
-      
-      animation: typewriter 5s steps(14) forwards, 
-                 blink 0.5s step-end infinite; 
-      display: inline-block; 
-      
-    }
-    .textshadow{
-      text-shadow: 1px 1px 2px rgba(5, 5, 5, 0.2);
-      color: black;
-      font-size: 36px;
-      font-weight: 500;
-    }
-   
-    
+          
+          .textshadow {
+            text-shadow: 1px 1px 2px rgba(5, 5, 5, 0.2);
+            color: black;
+            font-size: 36px;
+            font-weight: 500;
+          }
+          @keyframes move{
+            0%,100%{ transform: translatex(0%) ; 
+
+
+            }
+            50%{transform: translatex(15px) ; }
+          }
+          .animate-move{
+            animation: move 3s infinite;
+          }
+
         </style>
       </head>
-      <body class="bg-gray-900 text-white min-h-screen">
-        
-        <div id="home"
-          class="h-[10vh] w-full bg-yellow-900 border-b-2 border-black  border-t-2 border-t-gray-900 text-3xl text-black flex justify-around items-center font-semibold  fixed top-0 left-0 z-50"
+      <body class="text-white min-h-screen">
+        <div
+          id="home"
+          class="h-[10vh] w-[100%] bg-yellow-900 border-b-2 border-black border-t-2 border-t-gray-900 text-3xl text-black flex justify-around items-center font-semibold fixed top-0 left-0 z-50"
         >
-         <a  class="navbar hover:border-2 border-black h-[5vh] w-[10%] rounded-full hover:bg-gray-900 hover:text-white transform hover:scale-125 duration-[0.2s] text-center" href="#">Home
-        </a> 
-            
-          
-            
-          <a  class="navbar hover:border-2 border-black h-[5vh] w-[10%] rounded-full hover:bg-gray-900 hover:text-white transform hover:scale-125 duration-[0.2s] text-center" href="#about">About</a>
-          
-           
-          
-           
-          
-          <a  class="navbar hover:border-2 border-black h-[5vh] w-[15%] rounded-full hover:bg-gray-900 hover:text-white transform hover:scale-125 duration-[0.2s] text-center"href="#my projects">My Projects</a>
-         
-          <a  class="navbar hover:border-2 border-black h-[5vh] w-[14%] rounded-full hover:bg-gray-900 hover:text-white transform hover:scale-125 duration-[0.2s] text-center" href="#contact me">contact me</a>
-            
+          <a
+            class="navbar hover:border-2 border-black h-[5vh] w-[10%] rounded-full hover:bg-gray-900 hover:text-white transform hover:scale-125 duration-[0.2s] text-center"
+            href="#"
+            >Home
+          </a>
+
+          <a
+            class="navbar hover:border-2 border-black h-[5vh] w-[10%] rounded-full hover:bg-gray-900 hover:text-white transform hover:scale-125 duration-[0.2s] text-center"
+            href="#about"
+            >About</a
+          >
+
+          <a
+            class="navbar hover:border-2 border-black h-[5vh] w-[15%] rounded-full hover:bg-gray-900 hover:text-white transform hover:scale-125 duration-[0.2s] text-center"
+            href="#my projects"
+            >My Projects</a
+          >
+
+          <a
+            class="navbar hover:border-2 border-black h-[5vh] w-[14%] rounded-full hover:bg-gray-900 hover:text-white transform hover:scale-125 duration-[0.2s] text-center"
+            href="#contact me"
+            >contact me</a
+          >
         </div>
-    
        
-        <div  class="flex pt-[10vh]">
-          <div class="h-[90vh] w-[50%] bg-black relative">
+
+        <div class="flex mt-[10vh]  h-[100vh] w-[100%]">
+         
+          <div class="h-[90vh] w-[50%] relative bg-gray-900">
             <div>
               <h1
-                class="text-4xl font-semibold tracking-widest text-white mt-[80%] ml-[70%] typewriter"
+                class="text-4xl font-semibold tracking-widest text-white mt-[72%] ml-[5%] animate-move"
               >
-                Shivani Sharma
+                Hey There,✋ <br> <br> my Name Is SHIVANI SHARMA
               </h1>
             </div>
             <div
-              class="h-[400px] w-[400px] bg-yellow-600 rounded-full absolute top-[8%] left-[67%] shadow-xl shadow-black border-2 border-red-600"
-            ><img class="h-full w-full rounded-full bg-white" src="">  
-          </div> 
+              class="h-[400px] w-[400px] rounded-full bg-yellow-600  absolute top-[8%] left-[67%] shadow-xl shadow-black border-2 border-red-600 "
+            >
+              <img class="h-full w-[100%] rounded-full bg-white" src="final_photo-removebg-preview.png" />
+            </div>
           </div>
-          <div class="h-[60vh] w-[50%]  relative">
+          
+          <div class="h-[90vh] w-[50%] relative">
             <div
               class="h-[200px] w-[200px] rounded-full border-2 border-black shadow-xl bg-yellow-900 absolute left-[50%] top-[60%]"
             ></div>
@@ -99,211 +90,439 @@
             ></div>
           </div>
         </div>
-     
-    
-   
-    <div id="about" class="flex">
-      <div class="h-[100vh] w-[50%] bg-gray-900 px-[20px] text-red-200 pt-[8%]">
-        <p class="text-3xl font-bold">About Me</p><br>
-        <p class="text-2xl font-semibold"> 
-          HELLO! My Name Is Shivani Sharma,
-        </p> <br>
-        <p class="text-xl font-semibold text-justify leading-[34px]">
-          I completed my class 10th and 12th with scores of 83% and 71% respectively in school 'Arvind Kumar Nitin Kumar montessory English School' Khandwa (madhya pradesh).
-        </p> <br>
-        <p class="text-xl font-semibold text-justify leading-[34px]">I am currently a B.Tech student specializing in Data Science at 'shri dadaji institute of technology and science' college Khandwa alongside my coursework, I am enhancing my skills in web design through college projects and self-learning. </p> <br> <br>
-        <p class="text-2xl font-semibold">Language Profficiency.</p> <br>
-         <div class="flex gap-[65px] text-2xl font-semibold"><p>Hindi :</p> <p>Native</p></div>
-         <div class="flex gap-[16px] text-2xl font-semibold"><p>Rajasthani :</p> <p>Native</p></div>
-        <div class="flex gap-[46px] text-2xl font-semibold"><p>English :</p> <p>coversational(60%) Profficiency</p></div>
-        <br><br>
-        <p class="text-2xl font-semibold text-justify border-b-2 border-blue-900 pb-[10px]">I am a fond of watching and playing cricket.</p>   
-        
 
+       
 
-        
-      </div>
-      <div class="h-[100vh] w-[70%] bg-black pt-[8%]">
-        
-        <h1 class="text-5xl tracking-widest border-b-4 border-b-blue-500 w-fit content font-semibold text-center mt-[4%] ml-[10%] pb-[5px] text-red-200                                                                ">skills</h1>
-<div class="w-[100%] ml-[30%]">
-  <div class="flex"><div class="h-[200px] w-[200px] rounded-full mb-[30px] text-center pt-[8%]" 
-    style=" background: conic-gradient(rgba(218, 104, 10, 0.532) 80%, rgb(240, 243, 240) 0%); "> <h1 class="textshadow">80%</h1> 
-</div>  
-<p class="text-2xl mt-[10%] ml-[10%] h-[10%] border-b-2 border-white pb-[5px] tracking-widest text-red-200">HTML</p>
-    
-    </div>
-    <div class="flex">
-      <div class="h-[200px] w-[200px] rounded-full mb-[30px] text-center pt-[8%]" 
-    style=" background: conic-gradient(rgba(218, 104, 10, 0.483) 75%, rgb(240, 243, 240) 0%); "> <h1 class="textshadow">75%</h1>
-
-    </div>
-    <p class="text-2xl mt-[10%] ml-[10%] h-[10%] border-b-2 border-white pb-[5px] tracking-widest text-red-200">CSS</p>
-    </div> 
-        <div class="flex">
-          <div class="h-[200px] w-[200px] rounded-full text-center pt-[8%]" 
-        style=" background: conic-gradient(rgba(218, 104, 10, 0.483) 75%, rgb(240, 243, 240) 0%); "> <h1 class="textshadow">75%</h1>
-
-        </div>
-        <p class="text-2xl mt-[10%] ml-[10%] h-[10%] border-b-2 border-white pb-[5px]  tracking-widest text-red-200">TailwindCSS</p>
-        </div>
-</div>
-        
-        
-        </div>
-      </div>
-    </div> 
-    <div id="my projects" class="h-auto bg-black text-4xl text-center pt-[10%]"> <p>my projects</p>
-      <div class="h-auto bg-black w-full grid  grid-cols-3 gap-[50px] px-[10%] pt-[4%]">
-        <div
-          class="border-2 border-red-500 h-[300px] mt-[5px] mb-[5px] w-[300px] relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
-        >
-          <img
-            class="h-full w-full"
-            src="calculator image.png"
-            alt="calcutaor image"
-          />
-          <div
-            class="h-full w-full bg-black bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%] "
-          >   <a href="calculator.html"> <h1 id="image" class="text-center my-[40%] text-white font-semibold text-3xl hover:text-red-800 border-t-4 ml-[30%]  border-t-green-800 border-b-4 border-b-green-800 pt-[7px] pb-[7px] w-fit content  ">calculator</h1></a>  </div>
-        </div>
-        <div
-          class="border-2 border-red-500 mt-[5px] mb-[5px] h-[300px] w-[300px] relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
-        >
-          <img
-            class="h-full w-full"
-            src="sdits college image.png"
-            alt="sdits college image"
-          />
-          <div
-            class="h-full w-full bg-sky-800 bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
-          > <a href="sdits.html"> <h1 id="image" class="text-center my-[40%] text-white font-semibold text-2xl hover:text-red-800 border-t-4 ml-[15%]  border-t-black border-b-4 border-b-black pt-[7px] pb-[7px] w-fit content  ">sdits college website</h1></a></div>
-        </div>
-        <div
-          class="border-2 border-red-500 mt-[5px] mb-[5px] h-[300px] w-[300px] relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
-        >
-          <img
-            class="h-full w-full"
-            src="instagram image.png"
-            alt="instagram image"
-          />
-          <div
-            class="h-full w-full bg-blue-900 bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
-          > <a href="instagram.html"> <h1 id="image" class="text-center my-[40%] text-white font-semibold text-3xl hover:text-red-800 border-t-4 ml-[30%]  border-t-red-900 border-b-4 border-b-red-900 pt-[7px] pb-[7px] w-fit content  ">instagram</h1></a> </div>
-        </div>
-        <div
-          class="border-2 border-red-500 w-[300px] h-[300px] relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
-        >
-          <img
-            class="h-full w-full"
-            src="linkedin image.png"
-            alt="linkedin image"
-          />
-          <div
-            class="h-full w-full bg-black bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
-          > <a href="linkedin.html"> <h1 id="image" class="text-center my-[40%] text-white font-semibold text-3xl hover:text-red-800 border-t-4 ml-[30%]  border-t-fuchsia-800 border-b-4 border-b-fuchsia-800 pt-[7px] pb-[7px] w-fit content  ">linkedin</h1></a> </div>
-        </div>  
-        <div
-          class="border-2 border-red-500 h-[300px] w-[300px] relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
-        >
-          <img
-            class="h-full w-full"
-            src="facebook image.png"
-            alt="facebook image"
-          />
-          <div
-            class="h-full w-full bg-sky-800 bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
-          > <a href="facebook login page.html"> <h1 id="image" class="text-center my-[40%] text-white font-semibold text-3xl hover:text-red-800 border-t-4 ml-[30%]  border-t-blue-500 border-b-4 border-b-blue-500 pt-[7px] pb-[7px] w-fit content  ">facebook</h1></a> </div>
-        </div>
-        <div
-          class="border-2 border-red-500 h-[300px] w-[300px] relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
-        >
-          <img
-            class="h-full w-full"
-            src="swamivivwkanand image.png"
-            alt="swamivivekanand image"
-          />
-          <div
-            class="h-full w-full bg-yellow-900 bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
-          > <a href="swami vivekanand02.html"> <h1 id="image" class="text-center my-[40%] text-white font-semibold text-2xl hover:text-red-800 border-t-4 ml-[21%]  border-t-black border-b-4 border-b-black pt-[7px] pb-[7px] w-fit content  ">swamivivekanand</h1></a> </div>
-        </div>
-        <div
-          class="border-2 border-red-500 h-[300px] w-[300px] relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
-        >
-          <img
-            class="h-full w-full"
-            src="wildlife image.png"
-            alt="wildlife image"
-          />
-          <div
-            class="h-full w-full bg-black bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
-          > <a href="wildlife.html"> <h1 id="image" class="text-center my-[40%] text-white font-semibold text-3xl hover:text-red-800 border-t-4 ml-[30%]  border-t-orange-700 border-b-4 border-b-orange-700 pt-[7px] pb-[7px] w-fit content  ">wildlife</h1></a> </div>
-        </div>
-        <div
-          class="border-2 border-red-500 h-[300px] w-[300px] relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
-        >
-          <img
-            class="h-full w-full"
-            src="whatsapp image.png"
-            alt="whatsapp image"
-          />
-          <div
-            class="h-full w-full bg-green-800 bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
-          > <a href="whatsapp.html"> <h1 id="image" class="text-center my-[40%] text-white font-semibold text-3xl hover:text-red-800 border-t-4 ml-[30%]  border-t-black border-b-4 border-b-black pt-[7px] pb-[7px] w-fit content  ">whatsapp</h1></a> </div>
-        </div>
-        <div
-          class="border-2 border-red-500 h-[300px] w-[300px] relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
-        >
-          <img
-            class="h-full w-full"
-            src="dadaji ki photo.png"
-            alt="dadaji dhuniwale"
-          />
-          <div
-            class="h-full w-full bg-black bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%] border-2 border-red-500"
-          > <a href="dadaji dhuniwale.html"> <h1 id="image" class="text-center my-[40%] text-white font-semibold text-2xl hover:text-red-800 border-t-4 ml-[22%]  border-t-green-800 border-b-4 border-b-green-800 pt-[7px] pb-[7px] w-fit content  ">dadaji dhuniwale</h1></a> </div>
-        </div>
-      </div>
-    </div> 
-    
-      <div id="contact me" class="h-[100vh] w-[100%] bg-black relative pt-[10%]">
-      <div class="h-[70vh] w-[80%] border-2 border-red-500 mx-[10%] ">
-        <img class="absolute left-[12%] top-[27%] shadow-xl shadow-black h-[30vh] relative   " src="footer.png" alt="">    
-        <div class="h-[100%] w-[100%] "> <p class="text-[180px] text-gray-500 opacity-50 pl-[18%]  ">Let's Talk</p>
-          
-          <p class="text-2xl font-semibold absolute top-[34%] left-[45%] text-gray-700">Shivani Sharma</p>
-         
-          <div  class="h-[100%] w-[100%] absolute top-[40%] left-[37%] flex gap-[40px] text-gray-700  
-          ">
-            <img class="h-[4%] w-[4%]" src="gmail-removebg-preview.png" alt="">
-            <p  class="text-xl font-semibold"> shiwanisharma491@gmail.com</p>
-           
-          </div>
+        <div id="about" class="h-[100vh] w-[100%] pt-[10vh] text-center ">
+          <div class="h-[48vh] w-[100%] flex  ">
             
-          
-        
-        <div class="h-[100%] w-[100%] absolute top-[46%] left-[36%] flex gap-[38px] text-gray-700   
-                          ">
-          <img class="h-[5%] w-[5%]" src="phone-removebg-preview.png" alt="">
-          <p  class="text-xl font-semibold">9617191467</p>
-        </div>
-        
-        <div class=" h-[100%] w-[100%] absolute top-[53%] left-[37%] flex gap-[40px]">
-          <img class="h-[4%] w-[4%]" src="location-removebg-preview.png" alt="location">
-          <p  class="text-xl font-semibold  text-gray-700"> khandwa (Madhya Pradesh)</p>
-        </div>
-        </div>   
-        
-        
+            <div class="h-[40vh] w-[50%] px-[15px] py-[45px]">
+              <div
+                class="h-[35vh] w-[100%] px-[15px] py-[5px] shadow-xl shadow-black bg-black bg-opacity-60"
+              >
+                <p class="text-2xl font-semibold mt-[3px]">
+                  HELLO! My Name Is Shivani Sharma,
+                </p>
+                <br />
+                <div class="flex gap-[85px] text-xl">
+                  <p>Secondary School : </p>
+                  <p>A.K.N.K.M.English School</p>
+                </div>
+                <div class=" flex gap-[23px] text-xl mt-[8px] ">
+                  <p>Senior Secondary School :</p>
+                  <p>A.K.N.K.M.English School</p>
+                </div>
+                <div class="flex gap-[85px] text-xl pt-[15px] ">
+                  <p class="">Graduation :</p>
+                  <p>SDITS College Khandwa(M.P) (Running)</p>
+                  
+                </div> <br>
+                <div>
+                  <p class="text-justify text-xl pl-[8%]">
+                    I am a first year student of B.Tech from data science
+                  </p>
+                </div> <br>
+                <p class="text-justify text-xl">
+                  I am enhancing my skills in web design through college
+                  projects
+                  <p class="text-xl">and self-learning .</p> 
+                </p>
+              </div>
             </div>
             
-    </div>
-    <div class="h-[60vh] w-full bg-black">
-      <div class=""
-      > 
-        <div class="h-[50%] w-[62%] bg-orange-900 border-red-500 ml-[21%]"></div></div>
-     
+            <div class="h-[40vh] w-[50%] px-[15px] py-[45px] ">
+              <div
+                class="h-[35vh] w-[100%] px-[15px] py-[5px] shadow-xl shadow-black bg-black bg-opacity-50"
+              >
+                <p class="text-2xl">Language Profficiency .</p>
 
-    </div>
-  </body>
+                <div class="flex gap-[65px] text-2xl pt-[5%]">
+                  <p>Hindi :</p>
+                  <p>Native</p>
+                </div>
+                <br />
+                <div class="flex gap-[16px] text-2xl">
+                  <p>Rajasthani :</p>
+                  <p>Mother Tounge</p>
+                </div>
+                <br />
+                <div class="flex gap-[46px] text-2xl">
+                  <p>English :</p>
+                  <p>coversational (60%) Profficiency</p>
+                </div>
+                <p class="text-2xl pt-[7%]">
+                  I am a fond of watching and playing cricket .
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="h-[50vh] w-[100%] bg-black">
+            <div class="flex"><h1 class="text-5xl tracking-widest w-fit content font-semibold pt-[5px] ">
+              skill
+              <h1 class="text-6xl font-semibold text-blue-800">s</h1>
+            </h1></div>
+            <div class="w-[100%] flex justify-around">
+              <div>
+                <div
+                  class="h-[200px] w-[200px] rounded-full mb-[30px] text-center pt-[8%] relative"
+                  style="
+                    background: conic-gradient(
+                      rgba(6, 235, 21, 0.938) 80%,
+                      rgb(253, 253, 253) 0%
+                    );
+                  "
+                >
+                <div class=" bg-white h-[157px] w-[157px] rounded-full absolute left-[21px] top-[22px] pt-[47px] pl-[5px] shadow-xl shadow-black"><h1 class="textshadow">80%</h1></div>
+                  
+                </div>
+                <p
+                  class="text-3xl mt-[10%] ml-[10%] h-[10%] tracking-widest text-blue-800 font-bold"
+                >
+                  HTML
+                </p>
+              </div>
+              <div>
+                <div
+                  class="h-[200px] w-[200px] rounded-full mb-[30px] text-center pt-[8%] relative"
+                  style="
+                    background: conic-gradient(
+                      rgba(6, 235, 21, 0.938) 80%,
+                      rgb(251, 251, 251) 0%
+                    );
+                  "
+                >
+                <div class=" bg-white h-[157px] w-[157px] rounded-full absolute left-[21px] top-[22px] pt-[47px] pl-[5px] shadow-xl shadow-black"><h1 class="textshadow ">75%</h1></div>
+                  
+                </div>
+                <p
+                  class="text-3xl mt-[10%] ml-[10%] h-[10%] tracking-widest text-blue-800 font-bold"
+                >
+                  CSS
+                </p>
+              </div>
+              <div>
+                <div
+                  class="h-[200px] w-[200px] rounded-full mb-[30px] text-center pt-[8%] relative"
+                  style="
+                    background: conic-gradient(
+                      rgba(6, 235, 21, 0.938) 80%,
+                      rgb(250, 249, 249) 0%
+                    );
+                  "
+                >
+                <div class=" bg-white h-[157px] w-[157px] rounded-full absolute left-[21px] top-[22px] pt-[47px] pl-[5px] shadow-xl shadow-black"><h1 class="textshadow">75%</h1></div>
+                  
+                </div>
+                <p
+                  class="text-3xl mt-[10%] ml-[10%] h-[10%] tracking-widest text-blue-800 font-bold"
+                >
+                  Tailwindcss
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="my projects"
+          class="h-auto bg-black text-4xl text-center pt-[10%]"
+        >
+          <p>my projects</p>
+          <div
+            class="h-auto bg-black w-full grid grid-cols-3 gap-[50px] px-[10%] pt-[4%]"
+          >
+            <div
+              class="border-2 border-red-500 h-[300px] mt-[5px] mb-[5px] w-[300px] relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
+            >
+              <img
+                class="h-full w-full"
+                src="calculator image.png"
+                alt="calcutaor image"
+              />
+              <div
+                class="h-full w-full bg-black bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
+              >
+                <a href="calculator.html">
+                  <h1
+                    id="image"
+                    class="text-center my-[40%] text-white font-semibold text-3xl hover:text-red-800 border-t-4 ml-[30%] border-t-green-800 border-b-4 border-b-green-800 pt-[7px] pb-[7px] w-fit content"
+                  >
+                    calculator
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div
+              class="border-2 border-red-500 mt-[5px] mb-[5px] h-[300px] w-[300px] relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
+            >
+              <img
+                class="h-full w-full"
+                src="sdits college image.png"
+                alt="sdits college image"
+              />
+              <div
+                class="h-full w-full bg-sky-800 bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
+              >
+                <a href="sdits.html">
+                  <h1
+                    id="image"
+                    class="text-center my-[40%] text-white font-semibold text-2xl hover:text-red-800 border-t-4 ml-[15%] border-t-black border-b-4 border-b-black pt-[7px] pb-[7px] w-fit content"
+                  >
+                    sdits college website
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div
+              class="border-2 border-red-500 mt-[5px] mb-[5px] h-[300px] w-[300px] relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
+            >
+              <img
+                class="h-full w-full"
+                src="instagram image.png"
+                alt="instagram image"
+              />
+              <div
+                class="h-full w-full bg-blue-900 bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
+              >
+                <a href="instagram.html">
+                  <h1
+                    id="image"
+                    class="text-center my-[40%] text-white font-semibold text-3xl hover:text-red-800 border-t-4 ml-[30%] border-t-red-900 border-b-4 border-b-red-900 pt-[7px] pb-[7px] w-fit content"
+                  >
+                    instagram
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div
+              class="border-2 border-red-500 w-[300px] h-[300px] relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
+            >
+              <img
+                class="h-full w-full"
+                src="linkedin image.png"
+                alt="linkedin image"
+              />
+              <div
+                class="h-full w-full bg-black bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
+              >
+                <a href="linkedin.html">
+                  <h1
+                    id="image"
+                    class="text-center my-[40%] text-white font-semibold text-3xl hover:text-red-800 border-t-4 ml-[30%] border-t-fuchsia-800 border-b-4 border-b-fuchsia-800 pt-[7px] pb-[7px] w-fit content"
+                  >
+                    linkedin
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div
+              class="border-2 border-red-500 h-[300px] w-[300px] relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
+            >
+              <img
+                class="h-full w-full"
+                src="facebook image.png"
+                alt="facebook image"
+              />
+              <div
+                class="h-full w-full bg-sky-800 bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
+              >
+                <a href="facebook login page.html">
+                  <h1
+                    id="image"
+                    class="text-center my-[40%] text-white font-semibold text-3xl hover:text-red-800 border-t-4 ml-[30%] border-t-blue-500 border-b-4 border-b-blue-500 pt-[7px] pb-[7px] w-fit content"
+                  >
+                    facebook
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div
+              class="border-2 border-red-500 h-[300px] w-[300px] relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
+            >
+              <img
+                class="h-full w-full"
+                src="swamivivwkanand image.png"
+                alt="swamivivekanand image"
+              />
+              <div
+                class="h-full w-full bg-yellow-900 bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
+              >
+                <a href="swami vivekanand02.html">
+                  <h1
+                    id="image"
+                    class="text-center my-[40%] text-white font-semibold text-2xl hover:text-red-800 border-t-4 ml-[21%] border-t-black border-b-4 border-b-black pt-[7px] pb-[7px] w-fit content"
+                  >
+                    swamivivekanand
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div
+              class="border-2 border-red-500 h-[300px] w-[300px] relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
+            >
+              <img
+                class="h-full w-full"
+                src="wildlife image.png"
+                alt="wildlife image"
+              />
+              <div
+                class="h-full w-full bg-black bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
+              >
+                <a href="wildlife.html">
+                  <h1
+                    id="image"
+                    class="text-center my-[40%] text-white font-semibold text-3xl hover:text-red-800 border-t-4 ml-[30%] border-t-orange-700 border-b-4 border-b-orange-700 pt-[7px] pb-[7px] w-fit content"
+                  >
+                    wildlife
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div
+              class="border-2 border-red-500 h-[300px] w-[300px] relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
+            >
+              <img
+                class="h-full w-full"
+                src="whatsapp image.png"
+                alt="whatsapp image"
+              />
+              <div
+                class="h-full w-full bg-green-800 bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
+              >
+                <a href="whatsapp.html">
+                  <h1
+                    id="image"
+                    class="text-center my-[40%] text-white font-semibold text-3xl hover:text-red-800 border-t-4 ml-[30%] border-t-black border-b-4 border-b-black pt-[7px] pb-[7px] w-fit content"
+                  >
+                    whatsapp
+                  </h1></a
+                >
+              </div>
+            </div>
+            <div
+              class="border-2 border-red-500 h-[300px] w-[300px] relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
+            >
+              <img
+                class="h-full w-full"
+                src="dadaji ki photo.png"
+                alt="dadaji dhuniwale"
+              />
+              <div
+                class="h-full w-full bg-black bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%] border-2 border-red-500"
+              >
+                <a href="dadaji dhuniwale.html">
+                  <h1
+                    id="image"
+                    class="text-center my-[40%] text-white font-semibold text-2xl hover:text-red-800 border-t-4 ml-[22%] border-t-green-800 border-b-4 border-b-green-800 pt-[7px] pb-[7px] w-fit content"
+                  >
+                    dadaji dhuniwale
+                  </h1></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="contact me"
+          class="h-[100vh] w-[100%] bg-black relative pt-[10%]"
+        >
+          <div class="h-[44vh] w-[70%] border-2 border-red-600 mx-[15%]">
+            <img
+              class="absolute left-[4%] top-[20%] shadow-xl shadow-black h-[30vh] relative"
+              src="footer.png"
+              alt=""
+              
+
+            />  <p class="text-[180px] text-gray-500 opacity-50 pl-[18%]  ">
+              Let's Talk
+            </p>
+            <div class="h-[100vh] w-[100%]"> 
+              
+              <p
+                class="text-2xl font-semibold absolute top-[30%] left-[45%] text-gray-700"
+              >
+                Shivani Sharma
+              </p>
+
+              <div
+                class="h-[100%] w-[100%] absolute top-[35%] left-[37%] flex gap-[40px] text-gray-700"
+              >
+                <img
+                  class="h-[4%] w-[4%]"
+                  src="gmail-removebg-preview.png"
+                  alt=""
+                />
+                <p class="text-xl font-semibold">shiwanisharma491@gmail.com</p>
+              </div>
+
+              <div
+                class="h-[100%] w-[100%] absolute top-[40%] left-[36%] flex gap-[38px] text-gray-700"
+              >
+                <img
+                  class="h-[5%] w-[5%]"
+                  src="phone-removebg-preview.png"
+                  alt=""
+                />
+                <p class="text-xl font-semibold">9617191467</p>
+              </div>
+
+              <div
+                class="h-[100%] w-[100%] absolute top-[45%] left-[37%] flex gap-[40px]"
+              >
+                <img
+                  class="h-[4%] w-[4%]"
+                  src="location-removebg-preview.png"
+                  alt="location"
+                />
+                <p class="text-xl font-semibold text-gray-700">
+                  khandwa (Madhya Pradesh)
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="h-[60vh] bg-black w-[100%]  ">
+            <div class="h-[50vh] w-[80%]   ml-[10%] mt-[50px]  ">
+
+              <div class="h-[45vh] w-[90%] border-2 border-gray-500 shadow-xl shadow-black my-[20px] ml-[5%] pl-[20px] pt-[40px] flex justify-around bg-white ">
+               <div class="h-[100%] w-[40%]">
+                <p class="text-xl font-semibold text-gray-500">Your Name</p>
+                <input type="text" class="h-[5vh] w-[70%] border-2 border-gray-500 mt-[10px] text-black"></input>
+              
+                <p class="text-xl font-semibold text-gray-500 pt-[15px]">Email id</p>
+                <input type="text" class="h-[5vh] w-[70%] border-2 border-gray-500 text-black mt-[5px]"></input>
+                <p class="text-xl font-semibold text-gray-500 pt-[15px]">Subject</p>
+                <input type="text" class="h-[5vh] w-[100%] border-2 border-gray-500 mt-[10px] text-black"></input>
+               </div>
+                <div class="h-[35vh] w-[30%]">
+                  <p class="text-xl font-semibold text-gray-500 pt-[-50px] ">Type Your Message Here</p> <br>
+                    <input type="text" class="h-[89%] w-[90%] border-2 border-gray-500 rounded-tr-[30px] rounded-bl-[30px] shadow-xl shadow-black mt-[-10px]">
+                  </input>
+  
+                  </div>
+
+                  
+                 
+              
+                </div>
+                
+            </div>
+          </div>
+        </div>
+        
+      </body>
+    </html>
+  </head>
 </html>
+
+     
+            
+          
+            
+
+           
+        
+           
