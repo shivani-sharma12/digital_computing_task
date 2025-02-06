@@ -1,4 +1,630 @@
- <!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shivani sharma Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shivani Sharma Portfolio</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+          .textshadow {
+            text-shadow: 1px 1px 2px rgba(5, 5, 5, 0.2);
+            color: black;
+            font-size: 36px;
+            font-weight: 500;
+          }
+          @keyframes move {
+            0%,
+            100% {
+              transform: translatex(0%);
+            }
+            50% {
+              transform: translatex(15px);
+            }
+          }
+          .animate-move {
+            animation: move 3s infinite;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="text-white h-full mb-[20px] overflow-hidden">
+         <div class="navbar">
+           <div class=" block fixed top-0 left-0 w-full z-50">
+          <div
+            class="h-[10vh] w-full bg-yellow-900 border-b-2 border-black border-t-2 border-t-gray-900 flex justify-between items-center px-4"
+          >
+            <span class="text-3xl text-black font-semibold">Menu</span>
+            <button
+              id="menu-toggle"
+              class="text-black text-3xl focus:outline-none"
+            >
+              &#9776;
+            </button>
+          </div>
+
+          <div
+            id="mobile-menu"
+            class="hidden bg-yellow-900 border-t-2 border-black text-center py-4"
+          >
+            <a
+              href="#"
+              class="block py-2 text-black hover:bg-gray-900 hover:text-white"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="block py-2 text-black hover:bg-gray-900 hover:text-white"
+              >About</a
+            >
+            <a
+              href="#my-projects"
+              class="block py-2 text-black hover:bg-gray-900 hover:text-white"
+              >My Projects</a
+            >
+            <a
+              href="#contact-me"
+              class="block py-2 text-black hover:bg-gray-900 hover:text-white"
+              >Contact-Me</a
+            >
+          </div>
+        </div></div>
+
+          <script>
+            document
+              .getElementById("menu-toggle")
+              .addEventListener("click", function () {
+                const menu = document.getElementById("mobile-menu");
+                menu.classList.toggle("hidden");
+                menu.classList.toggle("block");
+              });
+          </script>
+
+          <div class="home">
+            <div class="sm:mt-[10vh] mt-[70px] flex flex-wrap min-h-screen w-full">
+              <div
+                class="relative w-full sm:w-1/2 h-[60vh] sm:h-[90vh] bg-gray-900 flex items-center justify-center p-6"
+              >
+                <div class="text-center mt-[140px] sm:text-left">
+                  <h1
+                    class="text-3xl sm:text-4xl font-semibold tracking-widest text-white animate-move"
+                  >
+                    Hey There,✋ <br /><br />
+                    My Name Is SHIVANI SHARMA
+                  </h1>
+                </div>
+                <div
+                  class="absolute sm:w-[400px] sm:h-[400px] w-[250px] h-[250px] rounded-full bg-yellow-600 shadow-xl shadow-black border-2 border-red-600 top-8 sm:top-[8%] sm:left-[67%]"
+                >
+                  <img
+                    class="h-full w-full rounded-full bg-white object-cover"
+                    src="final_photo-removebg-preview.png"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="relative w-full sm:w-1/2 h-[60vh] sm:h-[90vh] flex items-center justify-center"
+              >
+                <div
+                  class="absolute sm:w-[200px] sm:h-[200px] w-[150px] h-[150px] rounded-full border-2 border-black shadow-xl bg-yellow-900 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                ></div>
+                <div
+                  class="absolute sm:w-[300px] sm:h-[300px] w-[200px] h-[200px] rounded-full border-2 border-black shadow-xl shadow-black bg-yellow-900 top-[60%] left-[50%] transform -translate-x-1/2"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about">
+            <div id="about" class="h-auto w-full pt-[10vh] text-center">
+              <div class="h-auto w-full flex flex-col sm:flex-row">
+                <div class="h-auto w-full sm:w-1/2 px-4 py-6">
+                  <div
+                    class="h-auto w-full px-4 py-3 shadow-xl shadow-black bg-black bg-opacity-60"
+                  >
+                    <p class="text-xl sm:text-2xl font-semibold mt-3">
+                      HELLO! My Name Is Shivani Sharma,
+                    </p>
+                    <br />
+                    <div
+                      class="flex flex-col sm:flex-row gap-4 sm:gap-[85px] text-base sm:text-xl"
+                    >
+                      <p>Secondary School:</p>
+                      <p>A.K.N.K.M.English School</p>
+                    </div>
+                    <div
+                      class="flex flex-col sm:flex-row gap-4 sm:gap-[23px] text-base sm:text-xl mt-2"
+                    >
+                      <p>Senior Secondary School:</p>
+                      <p>A.K.N.K.M.English School</p>
+                    </div>
+                    <div
+                      class="flex flex-col sm:flex-row gap-4 sm:gap-[85px] text-base sm:text-xl pt-4"
+                    >
+                      <p>Graduation:</p>
+                      <p>SDITS College Khandwa(M.P) (Running)</p>
+                    </div>
+                    <br />
+                    <p class="text-justify text-base sm:text-xl px-4">
+                      I am a first year student of B.Tech in data science
+                    </p>
+                    <br />
+                    <p class="text-justify text-base sm:text-xl px-4">
+                      I am enhancing my skills in web design through college
+                      projects and self-learning.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="h-auto w-full sm:w-1/2 px-4 py-6">
+                  <div
+                    class="h-auto w-full px-4 py-3 shadow-xl shadow-black bg-black bg-opacity-50"
+                  >
+                    <p class="text-xl sm:text-2xl">Language Proficiency</p>
+
+                    <div
+                      class="flex flex-col sm:flex-row gap-4 sm:gap-[65px] text-base sm:text-2xl pt-4"
+                    >
+                      <p>Hindi:</p>
+                      <p>Native</p>
+                    </div>
+                    <br />
+                    <div
+                      class="flex flex-col sm:flex-row gap-4 sm:gap-[16px] text-base sm:text-2xl"
+                    >
+                      <p>Rajasthani:</p>
+                      <p>Mother Tongue</p>
+                    </div>
+                    <br />
+                    <div
+                      class="flex flex-col sm:flex-row gap-4 sm:gap-[46px] text-base sm:text-2xl"
+                    >
+                      <p>English:</p>
+                      <p>Conversational (60%) Proficiency</p>
+                    </div>
+                    <p class="text-xl sm:text-2xl pt-4">
+                      I am fond of watching and playing cricket.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="h-auto w-full bg-black">
+                <div class="flex justify-center py-4">
+                  <h1
+                    class="text-4xl sm:text-5xl tracking-widest font-semibold"
+                  >
+                    skill
+                    <span
+                      class="text-5xl sm:text-6xl font-semibold text-blue-800"
+                      >s</span
+                    >
+                  </h1>
+                </div>
+                <div class="w-full flex flex-wrap justify-center gap-8">
+                  <div class="flex flex-col items-center">
+                    <div
+                      class="h-[150px] w-[150px] sm:h-[200px] sm:w-[200px] rounded-full mb-8 text-center pt-8 relative"
+                      style="
+                        background: conic-gradient(
+                          rgba(6, 235, 21, 0.938) 80%,
+                          rgb(253, 253, 253) 0%
+                        );
+                      "
+                    >
+                      <div
+                        class="bg-white h-[120px] w-[120px] sm:h-[157px] sm:w-[157px] rounded-full absolute left-[15%] top-[15%] sm:left-[21px] sm:top-[22px] pt-[40%] pl-[5px] shadow-xl shadow-black"
+                      >
+                        <h1 class="textshadow">80%</h1>
+                      </div>
+                    </div>
+                    <p
+                      class="text-xl sm:text-3xl tracking-widest text-blue-800 font-bold"
+                    >
+                      HTML
+                    </p>
+                  </div>
+                  <div class="flex flex-col items-center">
+                    <div
+                      class="h-[150px] w-[150px] sm:h-[200px] sm:w-[200px] rounded-full mb-8 text-center pt-8 relative"
+                      style="
+                        background: conic-gradient(
+                          rgba(6, 235, 21, 0.938) 80%,
+                          rgb(251, 251, 251) 0%
+                        );
+                      "
+                    >
+                      <div
+                        class="bg-white h-[120px] w-[120px] sm:h-[157px] sm:w-[157px] rounded-full absolute left-[15%] top-[15%] sm:left-[21px] sm:top-[22px] pt-[40%] pl-[5px] shadow-xl shadow-black"
+                      >
+                        <h1 class="textshadow">75%</h1>
+                      </div>
+                    </div>
+                    <p
+                      class="text-xl sm:text-3xl tracking-widest text-blue-800 font-bold"
+                    >
+                      CSS
+                    </p>
+                  </div>
+                  <div class="flex flex-col items-center">
+                    <div
+                      class="h-[150px] w-[150px] sm:h-[200px] sm:w-[200px] rounded-full mb-8 text-center pt-8 relative"
+                      style="
+                        background: conic-gradient(
+                          rgba(6, 235, 21, 0.938) 80%,
+                          rgb(250, 249, 249) 0%
+                        );
+                      "
+                    >
+                      <div
+                        class="bg-white h-[120px] w-[120px] sm:h-[157px] sm:w-[157px] rounded-full absolute left-[15%] top-[15%] sm:left-[21px] sm:top-[22px] pt-[40%] pl-[5px] shadow-xl shadow-black"
+                      >
+                        <h1 class="textshadow">75%</h1>
+                      </div>
+                    </div>
+                    <p
+                      class="text-xl sm:text-3xl tracking-widest text-blue-800 font-bold"
+                    >
+                      Tailwindcss
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects">
+            <div
+              id="my-projects"
+              class="h-auto bg-black text-4xl text-center pt-[10%]"
+            >
+              <p>My Projects</p>
+              <div
+                class="h-auto bg-black w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-[20px] px-[5%] pt-[4%]"
+              >
+                <div
+                  class="border-2 border-red-500 h-[300px] w-full relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
+                >
+                  <img
+                    class="h-full w-full object-cover"
+                    src="calculator image.png"
+                    alt="calculator image"
+                  />
+                  <div
+                    class="h-full w-full bg-black bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
+                  >
+                    <a href="calculator.html">
+                      <h1
+                        class="text-center my-[40%] text-white font-semibold text-3xl hover:text-red-800 border-t-4 ml-[30%] border-t-green-800 border-b-4 border-b-green-800 pt-[7px] pb-[7px] w-fit content"
+                      >
+                        Calculator
+                      </h1>
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="border-2 border-red-500 h-[300px] w-full relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
+                >
+                  <img
+                    class="h-full w-full object-cover"
+                    src="sdits college image.png"
+                    alt="sdits college image"
+                  />
+                  <div
+                    class="h-full w-full bg-sky-800 bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
+                  >
+                    <a href="sdits.html">
+                      <h1
+                        class="text-center my-[40%] text-white font-semibold text-2xl hover:text-red-800 border-t-4 ml-[15%] border-t-black border-b-4 border-b-black pt-[7px] pb-[7px] w-fit content"
+                      >
+                        SDITS College Website
+                      </h1>
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="border-2 border-red-500 h-[300px] w-full relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
+                >
+                  <img
+                    class="h-full w-full object-cover"
+                    src="instagram image.png"
+                    alt="instagram image"
+                  />
+                  <div
+                    class="h-full w-full bg-blue-900 bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
+                  >
+                    <a href="instagram.html">
+                      <h1
+                        class="text-center my-[40%] text-white font-semibold text-3xl hover:text-red-800 border-t-4 ml-[30%] border-t-red-900 border-b-4 border-b-red-900 pt-[7px] pb-[7px] w-fit content"
+                      >
+                        Instagram
+                      </h1>
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="border-2 border-red-500 h-[300px] w-full relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
+                >
+                  <img
+                    class="h-full w-full object-cover"
+                    src="linkedin image.png"
+                    alt="linkedin image"
+                  />
+                  <div
+                    class="h-full w-full bg-black bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
+                  >
+                    <a href="linkedin.html">
+                      <h1
+                        class="text-center my-[40%] text-white font-semibold text-3xl hover:text-red-800 border-t-4 ml-[30%] border-t-fuchsia-800 border-b-4 border-b-fuchsia-800 pt-[7px] pb-[7px] w-fit content"
+                      >
+                        LinkedIn
+                      </h1>
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="border-2 border-red-500 h-[300px] w-full relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
+                >
+                  <img
+                    class="h-full w-full object-cover"
+                    src="facebook image.png"
+                    alt="facebook image"
+                  />
+                  <div
+                    class="h-full w-full bg-sky-800 bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
+                  >
+                    <a href="facebook login page.html">
+                      <h1
+                        class="text-center my-[40%] text-white font-semibold text-3xl hover:text-red-800 border-t-4 ml-[30%] border-t-blue-500 border-b-4 border-b-blue-500 pt-[7px] pb-[7px] w-fit content"
+                      >
+                        Facebook
+                      </h1>
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="border-2 border-red-500 h-[300px] w-full relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
+                >
+                  <img
+                    class="h-full w-full object-cover"
+                    src="swamivivekananda screenshort.png"
+                    alt="swamivivekananda image"
+                  />
+                  <div
+                    class="h-full w-full bg-yellow-900 bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
+                  >
+                    <a href="swami vivekanand02.html">
+                      <h1
+                        class="text-center my-[40%] text-white font-semibold text-2xl hover:text-red-800 border-t-4 ml-[21%] border-t-black border-b-4 border-b-black pt-[7px] pb-[7px] w-fit content"
+                      >
+                        Swamivivekanand
+                      </h1>
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="border-2 border-red-500 h-[300px] w-full relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
+                >
+                  <img
+                    class="h-full w-full object-cover"
+                    src="wildlife image.png"
+                    alt="wildlife image"
+                  />
+                  <div
+                    class="h-full w-full bg-black bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
+                  >
+                    <a href="wildlife.html">
+                      <h1
+                        class="text-center my-[40%] text-white font-semibold text-3xl hover:text-red-800 border-t-4 ml-[30%] border-t-orange-700 border-b-4 border-b-orange-700 pt-[7px] pb-[7px] w-fit content"
+                      >
+                        Wildlife
+                      </h1>
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="border-2 border-red-500 h-[300px] w-full relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
+                >
+                  <img
+                    class="h-full w-full object-cover"
+                    src="whatsapp image.png"
+                    alt="whatsapp image"
+                  />
+                  <div
+                    class="h-full w-full bg-green-800 bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
+                  >
+                    <a href="whatsapp.html">
+                      <h1
+                        class="text-center my-[40%] text-white font-semibold text-3xl hover:text-red-800 border-t-4 ml-[30%] border-t-black border-b-4 border-b-black pt-[7px] pb-[7px] w-fit content"
+                      >
+                        WhatsApp
+                      </h1>
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="border-2 border-red-500 h-[300px] w-full relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
+                >
+                  <img
+                    class="h-full w-full object-cover"
+                    src="dadaji ki photo.png"
+                    alt="dadaji dhuniwale"
+                  />
+                  <div
+                    class="h-full w-full bg-black bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
+                  >
+                    <a href="dadaji dhuniwale.html">
+                      <h1
+                        class="text-center my-[40%] text-white font-semibold text-2xl hover:text-red-800 border-t-4 ml-[22%] border-t-green-800 border-b-4 border-b-green-800 pt-[7px] pb-[7px] w-fit content"
+                      >
+                        Dadaji Dhuniwale
+                      </h1>
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="border-2 border-red-500 h-[300px] w-full relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
+                >
+                  <img
+                    class="h-full w-full object-cover"
+                    src="landing page01 screenshort.png"
+                    alt="pizza photo"
+                  />
+                  <div
+                    class="h-full w-full bg-black bg-opacity-50 absolute top-[0%] right-[100%] duration-[0.6s] group-hover:right-[0%]"
+                  >
+                    <a href="landing_page_design01.html">
+                      <h1
+                        class="text-center my-[40%] text-white font-semibold text-2xl hover:text-red-800 border-t-4 ml-[22%] border-t-green-800 border-b-4 border-b-green-800 pt-[7px] pb-[7px] w-fit content"
+                      >
+                        Food Webpage
+                      </h1>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="contact-me" class="w-full">
+            <div class="footer min-h-[80vh] w-full relative pt-10 bg-gray-100">
+              <div class="max-w-5xl mx-auto px-4">
+                <div
+                  class="relative border-2 border-red-600 shadow-lg bg-white p-6 rounded-lg"
+                >
+                  <img
+                    class="absolute hidden sm:block left-4 top-10 shadow-xl shadow-black w-24 h-24 sm:w-32 sm:h-32"
+                    src="footer.png"
+                    alt="Profile"
+                  />
+                  <p
+                    class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-gray-500 opacity-50 text-center"
+                  >
+                    Let's Talk
+                  </p>
+
+                  <div class="mt-10 text-center space-y-4">
+                    <p class="text-2xl font-semibold text-gray-700">
+                      Shivani Sharma
+                    </p>
+
+                    <div
+                      class="flex items-center justify-center gap-4 text-gray-700"
+                    >
+                      <img
+                        class="h-6 w-6"
+                        src="gmail-removebg-preview.png"
+                        alt="Email"
+                      />
+                      <p class="text-lg sm:text-xl font-semibold">
+                        shiwanisharma491@gmail.com
+                      </p>
+                    </div>
+
+                    <div
+                      class="flex items-center justify-center gap-4 text-gray-700"
+                    >
+                      <img
+                        class="h-6 w-6"
+                        src="phone-removebg-preview.png"
+                        alt="Phone"
+                      />
+                      <p class="text-lg sm:text-xl font-semibold">9617191467</p>
+                    </div>
+
+                    <div
+                      class="flex items-center justify-center gap-4 text-gray-700"
+                    >
+                      <img
+                        class="h-6 w-6"
+                        src="location-removebg-preview.png"
+                        alt="Location"
+                      />
+                      <p class="text-lg sm:text-xl font-semibold">
+                        Khandwa (Madhya Pradesh)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-10">
+                  <div
+                    class="bg-white border-2 border-gray-500 shadow-lg rounded-lg p-6"
+                  >
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div class="space-y-4">
+                        <div>
+                          <p class="text-lg font-semibold text-gray-500">
+                            Your Name
+                          </p>
+                          <input
+                            type="text"
+                            class="w-full border-2 border-gray-500 p-2 rounded-md text-black"
+                          />
+                        </div>
+                        <div>
+                          <p class="text-lg font-semibold text-gray-500">
+                            Email id
+                          </p>
+                          <input
+                            type="email"
+                            class="w-full border-2 border-gray-500 p-2 rounded-md text-black"
+                          />
+                        </div>
+                        <div>
+                          <p class="text-lg font-semibold text-gray-500">
+                            Subject
+                          </p>
+                          <input
+                            type="text"
+                            class="w-full border-2 border-gray-500 p-2 rounded-md text-black"
+                          />
+                        </div>
+                        <button
+                          class="w-full text-white text-xl font-semibold bg-green-800 py-2 rounded-md"
+                        >
+                          Submit
+                        </button>
+                      </div>
+
+                      <div>
+                        <p class="text-lg font-semibold text-gray-500">
+                          Type Your Message Here
+                        </p>
+                        <textarea
+                          class="w-full border-2 border-gray-500 p-4 rounded-lg shadow-lg min-h-[150px]"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </body>
+    </html>
+  </head>
+</html>
+
+<!-- 
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -36,7 +662,7 @@
       <body class="text-white min-h-screen">
         <div
           id="home"
-          class="h-[10vh] w-[100%] bg-yellow-900 border-b-2 border-black border-t-2 border-t-gray-900 text-3xl text-black flex justify-around items-center font-semibold fixed top-0 left-0 z-50"
+          class="h-[10vh] w-[100%]  bg-yellow-900 border-b-2 border-black border-t-2 border-t-gray-900 text-3xl text-black flex justify-around items-center font-semibold fixed top-0 left-0 z-50"
         >
           <a
             class="navbar hover:border-2 border-black h-[5vh] w-[10%] rounded-full hover:bg-gray-900 hover:text-white transform hover:scale-125 duration-[0.2s] text-center"
@@ -64,7 +690,7 @@
         </div>
        
 
-        <div class="flex mt-[10vh]  h-[100vh] w-[100%]">
+        <div class="flex mt-[10vh]   h-[100vh] w-[100%]">
          
           <div class="h-[90vh] w-[50%] relative bg-gray-900">
             <div>
@@ -421,7 +1047,11 @@
                 >
               </div>
             </div>
-           <div
+
+
+
+
+            <div
               class="border-2 border-red-500 h-[300px] w-[300px] relative group overflow-hidden shadow-2xl shadow-black rounded-bl-[20%] rounded-tr-[20%]"
             >
               <img
@@ -443,6 +1073,9 @@
               </div>
             </div>
             
+
+
+
           </div>
         </div>
 
@@ -517,8 +1150,8 @@
                 <p class="text-xl font-semibold text-gray-500 pt-[15px]">Email id</p>
                 <input type="text" class="h-[5vh] w-[70%] border-2 border-gray-500 text-black mt-[5px]"></input>
                 <p class="text-xl font-semibold text-gray-500 pt-[15px]">Subject</p>
-                <input type="text" class="h-[5vh] w-[100%] border-2 border-gray-500 mt-[10px] text-black"></input>
-                 <button class="text-black text-2xl font-semibold border-2 border-gray-500 mt-[20px] text-white h-[5vh] w-[50%] bg-green-800  "> submit</button>
+                <input type="text" class="h-[5vh] w-[100%] border-2 border-gray-500 mt-[10px] text-black h-[5vh] w-[100%] border-2 border-gray-500 mt-[10px]"></input>
+                <button class="text-black text-2xl font-semibold border-2 border-gray-500 mt-[20px] text-white h-[5vh] w-[50%] bg-green-800  "> submit</button>
                </div>
                 <div class="h-[35vh] w-[30%]">
                   <p class="text-xl font-semibold text-gray-500 pt-[-50px] ">Type Your Message Here</p> <br>
@@ -539,7 +1172,23 @@
       </body>
     </html>
   </head>
-</html> 
+</html>
+
+     
+            
+          
+            
+
+           
+        
+            -->
+
+
+       
+
+       
+
+               
 
      
             
